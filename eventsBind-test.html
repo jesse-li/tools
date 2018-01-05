@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div style="height: 4000px;background-color: red;" class="test">
+			<div>
+				<a href="javascript:void(0)" target="_self">ssssssss</a>
+			</div>
+		</div>
+		<script src="js/tools.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			
+			/*$(".test").eventsBind("click",function(){
+				alert(this.textContent)
+			},"a")*/
+			$('.test').eventsBind('touchmove',function(e){
+				/*alert(e)*/
+				e.preventDefault();
+			})
+		</script>
+	</body>
+</html>

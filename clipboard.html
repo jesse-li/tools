@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <title>预订礼包-游戏礼包-当乐个人中心-手机版[i.d.cn]</title>
+    <link rel="canonical" href="http://i.d.cn/"/>
+    
+<script>
+    //在scrollLoad.js里面会引用
+    window.resourcePath = 'http://raw.d.cn/wapmydj';
+</script>
+<meta name="copyright" content="www.d.cn"/>
+<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<link type="image/x-icon" rel="shortcut icon" href="http://www.d.cn/favicon.ico"/>
+<link rel="stylesheet" href="http://raw.d.cn/wapmydj/css/common.css"/>
+<link rel="stylesheet" href="demo-css/style.css"/>
+<link rel="stylesheet" href="http://raw.d.cn/wapmydj/css/animate.min.css"/>
+<link rel="stylesheet" href="http://raw.d.cn/wapmydj/css/idangerous.swiper.css"/>
+<script src="http://raw.d.cn/wapmydj/js/lib/jquery.1.9.0.min.js" type="text/javascript"></script>
+<script src="http://raw.d.cn/membersystem/static/js/DJ_OAuth.min.js" type="text/javascript"></script>
+<script src="http://raw.d.cn/wapmydj/js/lib/scrollLoad.js" type="text/javascript"></script>
+<script src="http://raw.d.cn/wapmydj/js/lib/a.js" type="text/javascript"></script>
+<script src="http://raw.d.cn/wapmydj/js/base.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+    <header class="header write-msg">
+        我的礼包
+        <a href="http://i.d.cn" title="" target="" class="back-btn"></a>
+    </header>
+
+<div class=" list-tabs2 clearfix">
+    <a class="curr" href="javascript:;" title="已领取">已领取</a>
+    <a href="http://i.d.cn/gbag/booked" title="" target="">已预订</a>
+</div>
+<ul class="dash-list white-bg" id="pages">
+    
+        <li>
+            <a href="http://sq.d.cn/mall/detail_89312.html?djca=2" title="我有上将暑期礼包" class="dash-link">
+                <img src="http://appmisc.d.cn/netgame/hdicon/6837" alt="我有上将暑期礼包" title="我有上将暑期礼包" width="120" height="120">
+                <p class="gift-name">我有上将暑期礼包</p>
+                <p class="gift-code">激活码：7BdP5oeW</p>
+                <p class="gift-dead-line">有效期至2017-07-31 00:00</p>
+            </a>
+            <a href="javascript:void(0)" target="_self" class="clipboard-btn" data-clipboard-text="sssssssssss">复制</a>
+        </li>
+    
+</ul>
+<div class="load-more" id="loadCont">上拉加载更多</div>
+<div class="clipboard-tips"></div>
+<script src="js/clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    BottomLoad.init({
+        url: "http://i.d.cn/gbag/received.json",
+        loadCont: "loadCont", /*加载状态显示模块*/
+        contentId: "pages" /*请求到的html放在什么里面*/
+    }, {
+        pn: 2,
+        ps: 15
+    });
+    var clipboard = new Clipboard('.clipboard-btn');
+    clipboard.on('success', function(e) {
+	   $(".clipboard-tips").text("复制成功！").fadeIn(300,function(){
+	   		setTimeout(function(){
+	   			 $(".clipboard-tips").fadeOut()
+	   		},1500)
+	   })
+	});
+
+clipboard.on('error', function(e) {
+    $(".clipboard-tips").text("复制失败！").fadeIn(300,function(){
+	   		setTimeout(function(){
+	   			 $(".clipboard-tips").fadeOut()
+	   		},1500)
+	   })
+});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
